@@ -41,7 +41,7 @@ export default function PostPage({
         </header>
         <main>
           <article className="prose dark:prose-dark">
-            {posts.body}
+            <MDXRemote {...posts.body} components={components} />
           </article>
         </main>
       </article>
